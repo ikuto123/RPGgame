@@ -1,0 +1,6 @@
+﻿基本データ,Unnamed: 2,Unnamed: 3,ステータス,Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8,Unnamed: 9,Unnamed: 10,Unnamed: 11,その他
+id,categoryId,name,maxHP,maxMP,attack,magicAttack,defense,magicDefense,dropExp,speed,magicType
+ID,カテゴリーID,名前,HP,MP,攻撃,魔法攻撃,防御,魔法防御,ドロップ経験値,早さ,魔法タイプ
+ene001,1,スライム,10,1,2,2,2,2,2,2,なし
+ene002,1,ゴブリン,10,1,2,2,2,2,2,2,水
+ene003,1,まおう,9999,1,2,2,2,2,2,2,闇

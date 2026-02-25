@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80fe412ff19d63346b959473f03d0465, type: 3}
+  m_Name: Magic_Attribute_Table_mag003
+  m_EditorClassIdentifier: 
+  id: mag003
+  categoryId: 5
+  name: "\u6C34"
+  none: "\u666E\u901A"
+  fire: "\u8010\u6027"
+  water: "\u666E\u901A"
+  wind: "\u666E\u901A"
+  thunder: "\u5F31\u70B9"
+  holy: "\u666E\u901A"
+  evil: "\u666E\u901A"

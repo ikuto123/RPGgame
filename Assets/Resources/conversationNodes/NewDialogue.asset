@@ -1,0 +1,156 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 896ee75e32228764db7a989a9a7d75d5, type: 3}
+  m_Name: NewDialogue
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - BaseNodeGUID: c22a6c46-6b18-44e5-a9bc-e6214f97c84c
+    PortName: "\u30A2\u30A4\u30C6\u30E0"
+    TargetNodeGUID: d6fd3b76-8169-42df-81a4-d06b6603f211
+  - BaseNodeGUID: c22a6c46-6b18-44e5-a9bc-e6214f97c84c
+    PortName: "\u88C5\u5099"
+    TargetNodeGUID: c2306579-0cc4-4bdd-93d9-6fcfc5d9135e
+  - BaseNodeGUID: d6fd3b76-8169-42df-81a4-d06b6603f211
+    PortName: Next
+    TargetNodeGUID: a41bc01f-2113-43b4-9393-ae149525b3e3
+  - BaseNodeGUID: c2306579-0cc4-4bdd-93d9-6fcfc5d9135e
+    PortName: Next
+    TargetNodeGUID: a41bc01f-2113-43b4-9393-ae149525b3e3
+  - BaseNodeGUID: 44c13297-fa15-431c-975b-60fd50a3742a
+    PortName: Next
+    TargetNodeGUID: 15e72385-3ec1-4551-a8e5-66e7165b3a83
+  - BaseNodeGUID: 15e72385-3ec1-4551-a8e5-66e7165b3a83
+    PortName: 1
+    TargetNodeGUID: 8a5a8034-6a3a-496b-8372-4200ea3f1674
+  - BaseNodeGUID: b289a531-80eb-4bb4-b5b4-8cdb0b00dc96
+    PortName: Next
+    TargetNodeGUID: d3f3dcdd-2a19-448e-9e23-4e586e7a0e41
+  - BaseNodeGUID: d3f3dcdd-2a19-448e-9e23-4e586e7a0e41
+    PortName: Next
+    TargetNodeGUID: c22a6c46-6b18-44e5-a9bc-e6214f97c84c
+  - BaseNodeGUID: 15e72385-3ec1-4551-a8e5-66e7165b3a83
+    PortName: 0
+    TargetNodeGUID: d22a7ddd-0a8f-48bf-a83a-5293c07fb2c4
+  - BaseNodeGUID: d22a7ddd-0a8f-48bf-a83a-5293c07fb2c4
+    PortName: Next
+    TargetNodeGUID: b289a531-80eb-4bb4-b5b4-8cdb0b00dc96
+  DialogueNodeData:
+  - NodeGUID: d6fd3b76-8169-42df-81a4-d06b6603f211
+    DialogueText: 
+    SpeakerName: 
+    Portrait: {fileID: 0}
+    Position: 0
+    NodePosition: {x: 1270, y: 223}
+    EventData: {fileID: 11400000, guid: f808870037f23ad4ba2d6f5d10ed3c93, type: 2}
+    Type: 0
+    TargetVariable: 
+    OperationType: 0
+    TargetValue: 0
+  - NodeGUID: c2306579-0cc4-4bdd-93d9-6fcfc5d9135e
+    DialogueText: 
+    SpeakerName: 
+    Portrait: {fileID: 0}
+    Position: 0
+    NodePosition: {x: 1270, y: 386}
+    EventData: {fileID: 11400000, guid: 866f35998a458ab4fab12fb70f223693, type: 2}
+    Type: 0
+    TargetVariable: 
+    OperationType: 0
+    TargetValue: 0
+  - NodeGUID: 44c13297-fa15-431c-975b-60fd50a3742a
+    DialogueText: 
+    SpeakerName: 
+    Portrait: {fileID: 0}
+    Position: 0
+    NodePosition: {x: -62, y: 272}
+    EventData: {fileID: 11400000, guid: 0c6f8b05c2e2fbd41a92918580e2c1a4, type: 2}
+    Type: 0
+    TargetVariable: 
+    OperationType: 0
+    TargetValue: 0
+  - NodeGUID: 8a5a8034-6a3a-496b-8372-4200ea3f1674
+    DialogueText: 
+    SpeakerName: 
+    Portrait: {fileID: 0}
+    Position: 0
+    NodePosition: {x: 463, y: 425}
+    EventData: {fileID: 11400000, guid: 1a17ea62b0d1d9649a9693394e4e2a1c, type: 2}
+    Type: 0
+    TargetVariable: NewVariable
+    OperationType: 0
+    TargetValue: 0
+  - NodeGUID: a41bc01f-2113-43b4-9393-ae149525b3e3
+    DialogueText: 
+    SpeakerName: 
+    Portrait: {fileID: 0}
+    Position: 0
+    NodePosition: {x: 1613, y: 300}
+    EventData: {fileID: 11400000, guid: ead6793aad6dfe94498d3f3afe9b0205, type: 2}
+    Type: 0
+    TargetVariable: 
+    OperationType: 0
+    TargetValue: 0
+  - NodeGUID: c22a6c46-6b18-44e5-a9bc-e6214f97c84c
+    DialogueText: 
+    SpeakerName: 
+    Portrait: {fileID: 0}
+    Position: 0
+    NodePosition: {x: 1009, y: 188}
+    EventData: {fileID: 11400000, guid: e949103ba02d4ad4aae26e6d74268cfd, type: 2}
+    Type: 0
+    TargetVariable: 
+    OperationType: 0
+    TargetValue: 0
+  - NodeGUID: b289a531-80eb-4bb4-b5b4-8cdb0b00dc96
+    DialogueText: 
+    SpeakerName: 
+    Portrait: {fileID: 0}
+    Position: 0
+    NodePosition: {x: 518, y: 188}
+    EventData: {fileID: 11400000, guid: 8d9cc7b63fc5f9143b6377ca14cf6503, type: 2}
+    Type: 0
+    TargetVariable: 
+    OperationType: 0
+    TargetValue: 0
+  - NodeGUID: 15e72385-3ec1-4551-a8e5-66e7165b3a83
+    DialogueText: 
+    SpeakerName: 
+    Portrait: {fileID: 0}
+    Position: 0
+    NodePosition: {x: 149, y: 222}
+    EventData: {fileID: 0}
+    Type: 1
+    TargetVariable: NewVariable
+    OperationType: 0
+    TargetValue: 0
+  - NodeGUID: d3f3dcdd-2a19-448e-9e23-4e586e7a0e41
+    DialogueText: 
+    SpeakerName: 
+    Portrait: {fileID: 0}
+    Position: 0
+    NodePosition: {x: 743, y: 209}
+    EventData: {fileID: 0}
+    Type: 2
+    TargetVariable: NewVariable
+    OperationType: 1
+    TargetValue: 1
+  - NodeGUID: d22a7ddd-0a8f-48bf-a83a-5293c07fb2c4
+    DialogueText: 
+    SpeakerName: 
+    Portrait: {fileID: 0}
+    Position: 0
+    NodePosition: {x: 360, y: 209}
+    EventData: {fileID: 0}
+    Type: 2
+    TargetVariable: NewVariable
+    OperationType: 0
+    TargetValue: 0

@@ -1,0 +1,11 @@
+﻿基本データ,Unnamed: 2,Unnamed: 3,アイテム,Unnamed: 5,Unnamed: 6,Unnamed: 7
+id,categoryId,enemyId,type,variousId,pieces,probability
+ID,カテゴリーId,エネミーID,種別,各種ID,個数,確率(割合)
+dro0000,2,ene000,アイテム,ite000,1,0.2
+dro0001,2,ene001,アイテム,ite001,1,0.2
+dro0002,2,ene001,武器,wep001,1,0.2
+dro0003,2,ene002,素材,mat002,1,1
+dro0004,2,ene003,アイテム,ite0003,1,0.2
+dro0005,2,ene003,武器,wep002,1,0.2
+dro0006,2,ene003,防具,arm001,1,0.2
+dro0007,2,ene004,アクセサリー,acc001,1,0.2

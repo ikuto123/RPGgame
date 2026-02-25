@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2d874991268f644b9d65235d5245794, type: 3}
+  m_Name: EquipmentData_acc001
+  m_EditorClassIdentifier: 
+  id: acc001
+  categoryId: 3
+  name: "\u5149\u308B\u8155\u8F2A"
+  type: "\u30A2\u30AF\u30BB\u30B5\u30EA\u30FC"
+  attack: 40
+  magicAttack: 100
+  defense: 5
+  magicDefense: -10
+  speed: 0
+  price: 20
+  magicType: "\u5149"
+  rarity: "\u2605\u2605\u2605"
+  explanation: 0
