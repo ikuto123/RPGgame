@@ -19,3 +19,24 @@ MonoBehaviour:
   - itemImageName: "\u515C"
     itemImage: {fileID: 21300000, guid: ab60110aa5e6c0641a064d6ea2c7b98e, type: 3}
     itemId: arm001
+  - itemImageName: "\u6728\u306E\u68D2"
+    itemImage: {fileID: 21300000, guid: 0ce975654871385428dcf3a4bca5277c, type: 3}
+    itemId: wep001
+  - itemImageName: "\u96F7\u306E\u6756"
+    itemImage: {fileID: 21300000, guid: 3a4452fbb62913a45a7a807a73e70d0a, type: 3}
+    itemId: wep002
+  - itemImageName: "\u76FE"
+    itemImage: {fileID: 21300000, guid: 4a46fd12b0c28ec4c8e8a875c759d9f7, type: 3}
+    itemId: wep003
+  - itemImageName: "\u7D19"
+    itemImage: {fileID: 21300000, guid: 0d8a8e85f51b84f4da4e6b15473ba710, type: 3}
+    itemId: arm002
+  - itemImageName: "\u9244\u306E\u93A7"
+    itemImage: {fileID: 21300000, guid: 742c928ee84a18a418317377d0c905da, type: 3}
+    itemId: arm003
+  - itemImageName: "\u5149\u308B\u8155\u8F2A"
+    itemImage: {fileID: 21300000, guid: 7022ea3db40007645910878bba73a7e4, type: 3}
+    itemId: acc001
+  - itemImageName: "\u30A4\u30E4\u30EA\u30F3\u30B0"
+    itemImage: {fileID: 21300000, guid: 918df631c2ff5674a96d002a14801ece, type: 3}
+    itemId: acc002

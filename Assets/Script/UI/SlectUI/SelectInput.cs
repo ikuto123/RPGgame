@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using Cysharp.Threading.Tasks; 
@@ -10,12 +11,14 @@ public class SelectInput
     
     private float _nextInputTime;
     private const float InputInterval = 0.2f;
+    private Action<int> _onSelectionChanged;
     
-    public async UniTask<int> WaitForSelection(List<UISelectable> items, CancellationToken token)
+    public async UniTask<int> WaitForSelection(List<UISelectable> items, CancellationToken token , Action<int> onSelectionChanged = null , int startIndex = 0 )
     {
         _items = items;
-        _currentIndex = 0;
-
+        _currentIndex = Mathf.Clamp(startIndex, 0, _items.Count - 1);
+        _onSelectionChanged = onSelectionChanged; // コールバックを保持
+        
         RefreshSelection();
         
         //決定されるまで無限ループ
@@ -29,6 +32,10 @@ public class SelectInput
                 //決定時の演出をしてからインデックスを返す
                 _items[_currentIndex].Press(); 
                 return _currentIndex; 
+            }
+            if(Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.Escape))
+            {
+                return -1; //キャンセルされた
             }
 
             //移動キー
@@ -64,8 +71,8 @@ public class SelectInput
         _items[_currentIndex].SetSelected(false);
         
         _currentIndex += direction;
-        if (_currentIndex >= _items.Count) _currentIndex = 0;
-        if (_currentIndex < 0) _currentIndex = _items.Count - 1;
+        if (_currentIndex >= _items.Count) _currentIndex = _items.Count - 1;
+        if (_currentIndex < 0) _currentIndex = 0;
 
         RefreshSelection();
     }
@@ -74,7 +81,11 @@ public class SelectInput
     {
         if (_items.Count > 0)
         {
+            for (int i = 0; i < _items.Count; i++)
+                _items[i].SetSelected(false);
+            
             _items[_currentIndex].SetSelected(true);
+            _onSelectionChanged?.Invoke(_currentIndex);
         }
     }
     

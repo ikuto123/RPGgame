@@ -9,7 +9,9 @@ public class ShopInteratable : MonoBehaviour , IInteractable
 
     public void OnInteract(PlayerController player)
     {
-        
+        UIManager.Instance.EquipmentShopView.Show();
+        UIManager.Instance.EquipmentShopView.StartSelectItem();
+
     }
 
     public string ShowInteractionText()
