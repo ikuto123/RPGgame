@@ -37,6 +37,22 @@ public class PlayerItemInventory : MonoBehaviour
         Debug.Log($"{item.Name} を {amount}個 入手しました。");
     }
 
+    public void RemoveItem(ItemData item, int amount = 1)
+    {
+        var Slot = inventory.FirstOrDefault(slot => slot.itemData == item);
+
+        if (Slot != null && Slot.quantity >= amount)
+        {
+            Slot.quantity -= amount;
+
+            //アイテムが0になったらリストから消す
+            if (Slot.quantity <= 0)
+            {
+                inventory.Remove(Slot);
+            }
+        }
+    }
+
     public bool TryUseItem(ItemData item, int amount = 1 , bool isUse = true)
     {
         var Slot = inventory.FirstOrDefault(slot => slot.itemData == item);
@@ -55,7 +71,7 @@ public class PlayerItemInventory : MonoBehaviour
         return false;
     }
 
-    public List<InventorySlot> ShowItemInventory()
+    public List<InventorySlot> GetItemInventory()
     {
         return inventory;
     }

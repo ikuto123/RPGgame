@@ -20,18 +20,7 @@ public class PlayerMenue : MonoBehaviour
         {
             UIManager.Instance.SetCursorState(true);
             
-            UIManager.Instance.PlayerStatusView.Show();
-            UIManager.Instance.PlayerMenuView.Show();
-            
-            UIManager.Instance.PlayerItemView.UpdateItemBox(_itemInventory.ShowItemInventory());
-            
-            UIManager.Instance.PlayerStatusView.UpdateStatus(
-                _status.Hp,
-                _status.Mp,
-                _status.Level,
-                _status.Experience,
-                _status.Attack,
-                _status.Defense);
+
         }
     }
 }

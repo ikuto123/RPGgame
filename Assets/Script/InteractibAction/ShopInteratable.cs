@@ -1,3 +1,4 @@
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 
 public class ShopInteratable : MonoBehaviour , IInteractable
@@ -9,8 +10,7 @@ public class ShopInteratable : MonoBehaviour , IInteractable
 
     public void OnInteract(PlayerController player)
     {
-        UIManager.Instance.EquipmentShopView.Show();
-        UIManager.Instance.EquipmentShopView.StartSelectItem();
+        UIManager.Instance.SelectShopActionView.StartSelectAction().Forget();
 
     }
 

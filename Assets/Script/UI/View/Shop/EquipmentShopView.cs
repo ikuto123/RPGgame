@@ -31,7 +31,6 @@ public class EquipmentShopView : UIViewBase
     [SerializeField] private GameObject _confirmButton;
     
     private List<UISelectable> _confirmButtons = new List<UISelectable>();
-        
     
     Vector3[] corners = new Vector3[4];
 
@@ -92,13 +91,14 @@ public class EquipmentShopView : UIViewBase
     }
     
     public async UniTask StartSelectItem()
-    { 
+    {
+        Show();
         while (!_cts.IsCancellationRequested)
         {
             await UniTask.Yield();
             int selectNumber = await _selectInput.WaitForSelection(_choiceSelectables, _cts.Token, OnSelectionChanged , _lastIndex);
 
-            if (selectNumber < 0) break; // キャンセルされた
+            if (selectNumber < 0) break; //キャンセルされた
 
             var item = ShopItems.equipmentList[selectNumber];
 
@@ -128,7 +128,6 @@ public class EquipmentShopView : UIViewBase
         Hide();
 
     }
-
     
     private async UniTask<bool> Confirmation(string itemName, int price)
     {
@@ -197,7 +196,7 @@ public class EquipmentShopView : UIViewBase
     public override void Hide()
     {
         base.Hide();
-        UIManager.Instance.PlayerStop = false;
+        UIManager.Instance.SelectShopActionView.StartSelectAction().Forget();
     }
 
 }

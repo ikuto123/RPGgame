@@ -4,8 +4,8 @@ using UnityEngine;
 [System.Serializable]
 public class EquipmentShopItemInfo
 {
-    public EquipmentData equipmentData; // アイテムのデータ
-    public int pieces; // 値段や在庫数など（用途に合わせて名前を変えてください）
+    public EquipmentData equipmentData; 
+    public int pieces; 
 }
 
 public class ShopEquipment : MonoBehaviour

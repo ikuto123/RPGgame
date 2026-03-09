@@ -13,7 +13,9 @@ public class DataAutoLinker
         LinkStatus<EquipmentStatus, EquipmentData>("equipmentData");
 
         // 引数: <コンポーネント, データ型>(IDのリスト変数名, データのリスト変数名)
-        LinkStatusList<ShopEquipment, EquipmentData>("equipmentIdList", "equipmentList", "equipmentData");    }
+        LinkStatusList<ShopEquipment, EquipmentData>("equipmentIdList", "equipmentList", "equipmentData");
+        
+    }
 
     private static void LinkStatus<TStatus, TData>(string dataFieldName)
         where TStatus : MonoBehaviour
