@@ -82,6 +82,7 @@ public class PlayerInteractor : MonoBehaviour
             if (input.IsInteract)
             {
                 _currentInteractable.OnInteract(GetComponent<PlayerController>());
+                UIManager.Instance.InteractionView.Hide();
             }
         }
     }

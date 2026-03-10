@@ -56,4 +56,8 @@ public class PlayerEquipmentInventory : MonoBehaviour
         }
     }
     
+    public List<EquipmentData> GetWeaponsInventory() => weapons;
+    public List<EquipmentData> GetArmorsInventory() => armors;
+    public List<EquipmentData> GetAccessoriesInventory() => accessories;
+    
 }

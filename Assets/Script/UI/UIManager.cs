@@ -7,11 +7,10 @@ public class UIManager : MonoBehaviour
     [Header("Views")]
     public InteractionView InteractionView;
     public DialogueView DialogueView;
-    public PlayerStatusView PlayerStatusView;
-    public PlayerItemView PlayerItemView;
-    public PlayerMenuView PlayerMenuView;
     public ItemRewardView ItemRewardView;
     public EquipmentShopView EquipmentShopView;
+    public SelectShopActionView SelectShopActionView;
+    public PlayerItemView PlayerItemView;
 
     public bool PlayerStop;
 
