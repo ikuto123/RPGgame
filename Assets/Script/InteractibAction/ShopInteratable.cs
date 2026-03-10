@@ -10,7 +10,8 @@ public class ShopInteratable : MonoBehaviour , IInteractable
 
     public void OnInteract(PlayerController player)
     {
-        UIManager.Instance.SelectShopActionView.StartSelectAction().Forget();
+        var shopInventory = GetComponent<ShopInventory>();
+        UIManager.Instance.SelectShopActionView.StartSelectAction(shopInventory).Forget();
 
     }
 

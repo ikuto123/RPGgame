@@ -13,6 +13,7 @@ public class SelectShopActionView : UIViewBase
     
     private CancellationTokenSource _cts = new CancellationTokenSource();
     private SelectInput _selectInput = new SelectInput();
+    
 
     private void Awake()
     {
@@ -34,7 +35,7 @@ public class SelectShopActionView : UIViewBase
         UIManager.Instance.PlayerStop = false;
     }
     
-    public async UniTask StartSelectAction()
+    public async UniTask StartSelectAction(ShopInventory shopInventory)
     {
         Show();
 
@@ -44,7 +45,7 @@ public class SelectShopActionView : UIViewBase
         {
             case 0 ://買う
                 transform.gameObject.SetActive(false);
-                UIManager.Instance.EquipmentShopView.StartSelectItem().Forget();
+                UIManager.Instance.EquipmentShopView.StartSelectItem(shopInventory).Forget();
                 break;
             case 1 ://売る
                 transform.gameObject.SetActive(false);

@@ -13,7 +13,7 @@ public class DataAutoLinker
         LinkStatus<EquipmentStatus, EquipmentData>("equipmentData");
 
         // 引数: <コンポーネント, データ型>(IDのリスト変数名, データのリスト変数名)
-        LinkStatusList<ShopEquipment, EquipmentData>("equipmentIdList", "equipmentList", "equipmentData");
+        //LinkStatusList<ShopEquipment, EquipmentData>("equipmentIdList", "equipmentList", "equipmentData");
         
     }
 
