@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class MoveToStore : CustomerBaseState
+public class WaitAtStoreState : CustomerBaseState
 {
-    public MoveToStore(CustomerController customer, CustomerStateMachine stateMachine) : base(customer, stateMachine){ }
+    public WaitAtStoreState(CustomerController customer, CustomerStateMachine stateMachine) : base(customer, stateMachine){ }
     
     public override void Enter() { Debug.Log("State: MoveToStore");}
 
