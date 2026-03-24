@@ -12,7 +12,8 @@ public enum ItemMenuCategory
     Weapon = 1, // 武器
     Armor = 2, // 防具
     Accessory = 3, // アクセサリー
-    Setting = 4 // 設定（売却モードでは非表示）
+    PlayerEquipment = 4, // プレイヤー装備（売却モードでは非表示）
+    Setting = 5 // 設定（売却モードでは非表示）
 }
 
 public enum PlayerItemMenuMode
@@ -50,6 +51,8 @@ public class PlayerItemView : UIViewBase
     private float topPadding = 20f; 
     private float bottomPadding = 20f;
     private Vector2 _initialContentPos;
+
+    private int GetSouldItemTab = 4;
 
     private CancellationTokenSource _cts = new CancellationTokenSource();
     private SelectInput _selectInput = new SelectInput();
@@ -111,8 +114,12 @@ public class PlayerItemView : UIViewBase
 
         foreach (Transform child in _menuTab.transform) child.gameObject.SetActive(true);
 
+        // 売却モードの場合は「プレイヤー装備」と「設定」タブを非表示にする
         if (_currentMode == PlayerItemMenuMode.Sell)
-            _menuTab.transform.GetChild(_menuTab.transform.childCount - 1).gameObject.SetActive(false);
+        {
+            for (int i = GetSouldItemTab; i < _menuTab.transform.childCount; i++)
+                _menuTab.transform.GetChild(i).gameObject.SetActive(false);
+        }
 
         _menuTabs = _menuTab.GetComponentsInChildren<UISelectable>(false).ToList();
     }
