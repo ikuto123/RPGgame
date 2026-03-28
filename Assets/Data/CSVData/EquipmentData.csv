@@ -1,0 +1,11 @@
+﻿基本データ,Unnamed: 2,Unnamed: 3,種別,性能,Unnamed: 6,Unnamed: 7,Unnamed: 8,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13
+id,categoryId,name,type,attack,magicAttack,defense,magicDefense,speed,price,magicType,rarity,explanation
+ID,カテゴリーID,名前,種別,攻撃力,魔法攻撃力,防御力,魔法防御力,速さ,値段,属性タイプ,レア度,説明
+wep001,3,木の棒,武器,50,0,0,0,0,100,なし,★★,
+wep002,3,雷の杖,武器,5,5,0,0,0,200,雷,★★★,
+wep003,3,盾,武器,0,0,100,100,-2,300,なし,★,
+arm001,3,兜,防具,5,5,5,5,5,10000,なし,★★,
+arm002,3,紙,防具,5,5,5,5,5,1,なし,★★★★,
+arm003,3,鉄の鎧,防具,5,5,5,5,5,3,風,★★★★★,
+acc001,3,光る腕輪,アクセサリー,40,100,5,-10,0,20,光,★★★,
+acc002,3,イヤリング,アクセサリー,5,5,5,5,0,5,なし,★★,

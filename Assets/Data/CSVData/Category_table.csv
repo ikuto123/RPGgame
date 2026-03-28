@@ -1,0 +1,10 @@
+﻿基本データ,Unnamed: 2,Unnamed: 3
+id,name,name_English
+ID,名前,名前(英語)
+cat001,キャラクター,character
+cat002,ドロップアイテム,dropItem
+cat003,アイテム,item
+cat004,装飾,business
+cat005,魔法,magic
+cat006,成長率,growth 
+cat7,ショップ,shop

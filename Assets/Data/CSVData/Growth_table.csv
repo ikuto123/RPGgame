@@ -1,0 +1,8 @@
+﻿基本情報,Unnamed: 2,Unnamed: 3,ステータス成長率(倍率),Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8,Unnamed: 9
+id,name,categoryId,maxHP_ratio,maxMP_ratio,attack_ratio,magicAttack_ratio,defense_ratio,magicDefense_ratio
+ID,職業,カテゴリーID,HP,MP,攻撃,魔法攻撃,防御,魔法防御
+gro000,サンプル,6,1.2,1.2,1.2,1.2,1.2,1.2
+gro001,剣士,6,1.2,1,1.2,0.8,1.1,1
+gro002,弓使い,6,1.2,1,1.2,0.8,1.1,1
+gro003,魔法使い,6,1,1.2,1,1.3,1,1.4
+gro004,パン屋,6,1.2,1,1.2,2,1.1,1

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31e2ce864e8e2d244a7463a1fc258baf, type: 3}
+  m_Name: PlayerData_pla001
+  m_EditorClassIdentifier: 
+  id: pla001
+  categoryId: 1
+  name: Player
+  minHP: 100
+  maxHP: 1000
+  minMP: 50
+  maxMP: 500
+  minAttack: 10
+  maxAttack: 250
+  minMagicAttack: 20
+  maxMagicAttack: 900
+  minDefense: 8
+  maxDefense: 800
+  minMagicDefense: 18
+  maxMagicDefense: 1800
+  speed: 10
+  exp: 100
+  maxLevel: 99
+  job: "\u30D1\u30F3\u5C4B"
+  magicType: "\u708E"

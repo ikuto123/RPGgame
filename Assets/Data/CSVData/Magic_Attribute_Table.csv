@@ -1,0 +1,10 @@
+﻿魔法データ,Unnamed: 2,Unnamed: 3,属性耐性,Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8,Unnamed: 9,Unnamed: 10
+id,categoryId,name,none,fire,water,wind,thunder,holy,evil
+ID,カテゴリーID,名前,なし,炎,水,風,雷,光,闇
+mag001,5,なし,普通,普通,普通,普通,普通,普通,普通
+mag002,5,炎,普通,普通,弱点,耐性,普通,普通,普通
+mag003,5,水,普通,耐性,普通,普通,弱点,普通,普通
+mag004,5,風,普通,弱点,普通,普通,耐性,普通,普通
+mag005,5,雷,普通,普通,耐性,弱点,普通,普通,普通
+mag006,5,光,普通,普通,普通,普通,普通,耐性,弱点
+mag007,5,闇,普通,普通,普通,普通,普通,弱点,耐性

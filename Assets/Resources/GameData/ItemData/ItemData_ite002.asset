@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60e79e79d1636f4409277c89ad04bc5a, type: 3}
+  m_Name: ItemData_ite002
+  m_EditorClassIdentifier: 
+  id: ite002
+  categoryId: 3
+  name: "\u653B\u6483\u30A2\u30AC\u30FC\u30EB"
+  type: "\u30A2\u30A4\u30C6\u30E0"
+  effectType: "\u653B\u6483UP"
+  amount: 0.5
+  rarity: "\u2605\u2605"
+  price: 300
+  magicType: "\u306A\u3057"
+  explanation: "\u653B\u6483\u304C\u4E0A\u304C\u308B"

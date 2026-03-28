@@ -1,0 +1,4 @@
+﻿基本データ,Unnamed: 2,Unnamed: 3,基本ステータス,Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8,Unnamed: 9,Unnamed: 10,Unnamed: 11,Unnamed: 12,Unnamed: 13,Unnamed: 14,Unnamed: 15,その他ステータス,Unnamed: 17,Unnamed: 18,Unnamed: 19,その他
+id,categoryId,name,minHP,maxHP,minMP,maxMP,minAttack,maxAttack,minMagicAttack,maxMagicAttack,minDefense,maxDefense,minMagicDefense,maxMagicDefense,speed,exp,maxLevel,job,magicType
+ID,カテゴリーID,名前,最小HP,最大HP,最小MP,最大MP,最小攻撃,最大攻撃,最小魔法攻撃,最大魔法攻撃,最小防御,最大防御,最小魔法防御,最大魔法防御,早さ,必要経験値(Level1時),最大レベル,職業,魔法タイプ
+pla001,1,Player,100,1000,50,500,10,250,20,900,8,800,18,1800,10,100,99,パン屋,炎

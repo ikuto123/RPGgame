@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8f852da9becd5345a95511b482a7d21, type: 3}
+  m_Name: EnemyData_ene003
+  m_EditorClassIdentifier: 
+  id: ene003
+  categoryId: 1
+  name: "\u307E\u304A\u3046"
+  maxHP: 9999
+  maxMP: 1
+  attack: 2
+  magicAttack: 2
+  defense: 2
+  magicDefense: 2
+  dropExp: 2
+  speed: 2
+  magicType: "\u95C7"

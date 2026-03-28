@@ -1,0 +1,5 @@
+﻿基本データ,Unnamed: 2,Unnamed: 3,性能,Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8,Unnamed: 9,Unnamed: 10
+id,categoryId,name,location,effectType,amount,exp,rarity,price,explanation
+ID,カテゴリーID,名前,設置個所,効果タイプ,効果量(割合),経験値,レア度,値段,説明
+bus001,4,ランタン,A-1,HP上限値UP,5,10,★★,100,
+bus002,4,タイヤ,B-3,チップUP,2,8,★★★★★,1000,
