@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2d874991268f644b9d65235d5245794, type: 3}
-  m_Name: EquipmentData_arm002
+  m_Name: EquipmentData_arm005
   m_EditorClassIdentifier: 
-  id: arm002
-  categoryId: 3
-  name: "\u7D19"
-  type: "\u9632\u5177_\u4F53"
+  id: arm005
+  categoryId: 4
+  name: "\u30DC\u30ED\u30DC\u30ED\u306E\u9774"
+  type: "\u9632\u5177_\u8DB3"
   attack: 5
   magicAttack: 5
   defense: 5
   magicDefense: 5
   speed: 5
-  price: 1
-  magicType: "\u306A\u3057"
-  rarity: "\u2605\u2605\u2605\u2605"
+  price: 3
+  magicType: "\u6C34"
+  rarity: "\u2605\u2605\u2605"
   explanation: 0

@@ -16,7 +16,7 @@ public class EquipmentData : ScriptableObject
     [SerializeField] private int price; // 値段
     [SerializeField] private string magicType; // 属性タイプ
     [SerializeField] private string rarity; // レア度
-    [SerializeField] private int explanation; // 説明
+    [SerializeField] private string explanation; // 説明
 
     public string Id => id;
     public int CategoryId => categoryId;
@@ -30,5 +30,5 @@ public class EquipmentData : ScriptableObject
     public int Price => price;
     public string MagicType => magicType;
     public string Rarity => rarity;
-    public int Explanation => explanation;
+    public string Explanation => explanation;
 }

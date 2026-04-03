@@ -11,6 +11,10 @@ public class UIManager : MonoBehaviour
     public EquipmentShopView EquipmentShopView;
     public SelectShopActionView SelectShopActionView;
     public PlayerItemView PlayerItemView;
+	public PlayerMenuView PlayerMenuView;
+    public SettingView SettingView;
+    public PlayerEquipmentView PlayerEquipmentView;
+    public PlayerStatusView PlayerStatusView;
 
     public bool PlayerStop;
 
@@ -36,6 +40,8 @@ public class UIManager : MonoBehaviour
             InteractionView.Hide();
         }
 
+        if (PlayerMenuView != null) PlayerMenuView.Hide();
+        if (PlayerItemView != null) PlayerItemView.Hide();
         // 他のUIも同様に...
     }
 

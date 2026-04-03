@@ -50,6 +50,26 @@ public class SelectInput
         
         RefreshSelection();
         
+        while (!token.IsCancellationRequested)
+        {
+            float v0 = Input.GetAxisRaw("Vertical");
+            float h0 = Input.GetAxisRaw("Horizontal");
+
+            bool deciding =
+                Input.GetKey(KeyCode.Space) ||
+                Input.GetKey(KeyCode.Return) ||
+                Input.GetKey(KeyCode.E);
+
+            bool canceling =
+                Input.GetKey(KeyCode.B) ||
+                Input.GetKey(KeyCode.Escape);
+
+            if (v0 == 0 && h0 == 0 && !deciding && !canceling)
+                break;
+
+            await UniTask.Yield(PlayerLoopTiming.Update, token);
+        }
+        
         //決定されるまで無限ループ
         while (!token.IsCancellationRequested)
         {
@@ -77,9 +97,15 @@ public class SelectInput
 
                 if (layout == SelectLayout.Vertical)
                 {
+                    if (canEscapeUp && v > 0 && _currentIndex == 0)
+                    {
+                        _nextInputTime = Time.time + InputInterval;
+                        return -3;
+                    }
+
                     if (v > 0) direction = -1;      // 上
                     else if (v < 0) direction = 1;  // 下
-                    
+
                     if (direction == 0)
                     {
                         if (h > 0) direction = 1;

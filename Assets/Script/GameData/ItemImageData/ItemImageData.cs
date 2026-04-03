@@ -18,6 +18,7 @@ public class ItemImageData : ScriptableObject
     
         public Sprite ItemImage => itemImage;
         public string ItemId => itemId;
+        public string ItemImageName => itemImageName;
     }
 
     private void Initialize()

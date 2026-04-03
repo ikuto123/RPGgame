@@ -11,8 +11,8 @@ public abstract class CharacterStatus : MonoBehaviour
     
     [SerializeField] protected string Id;
 
-    protected int currentHP;
-    protected int currentMP;
+    public int currentHP;
+    public int currentMP;
     public int Hp => HP;
     public int Mp => MP;
     public int Attack => attack;

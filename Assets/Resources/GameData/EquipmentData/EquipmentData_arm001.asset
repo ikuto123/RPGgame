@@ -15,7 +15,7 @@ MonoBehaviour:
   id: arm001
   categoryId: 3
   name: "\u515C"
-  type: "\u9632\u5177"
+  type: "\u9632\u5177_\u982D"
   attack: 5
   magicAttack: 5
   defense: 5
