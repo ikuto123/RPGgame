@@ -55,3 +55,9 @@ MonoBehaviour:
   - itemImageName: "\u30B4\u30D6\u30EA\u30F3\u306E\u89D2"
     itemImage: {fileID: 21300000, guid: 55e0191684cda41428ed1186360d774c, type: 3}
     itemId: mat002
+  - itemImageName: "\u30B4\u30EB\u30C9\u30FC\u30EC\u30AE\u30F3\u30B9"
+    itemImage: {fileID: 21300000, guid: ddeca652a71db224abfa985bfaa47b77, type: 3}
+    itemId: arm004
+  - itemImageName: "\u30DC\u30ED\u30DC\u30ED\u306E\u9774"
+    itemImage: {fileID: 21300000, guid: ea0904c74a6306b489724776fd7ce877, type: 3}
+    itemId: arm005

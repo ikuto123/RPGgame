@@ -16,10 +16,9 @@ public class PlayerMenue : MonoBehaviour
     
     private void Update()
     {
-        if (_inputProvider.GetInput().IsMenuOpen)//閉じる時の処理はビューに書いてある
+        if (_inputProvider.GetInput().IsMenuOpen) //閉じる時の処理はビューに書いてある
         {
-            UIManager.Instance.SetCursorState(true);
-            
+            UIManager.Instance.PlayerMenuView.StartSelectPlayerMenu(PlayerItemMenuMode.View);
 
         }
     }

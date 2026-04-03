@@ -49,7 +49,7 @@ public class SelectShopActionView : UIViewBase
                 break;
             case 1 ://売る
                 transform.gameObject.SetActive(false);
-                UIManager.Instance.PlayerItemView.StartSelectPlayerInventory(PlayerItemMenuMode.Sell).Forget();
+                UIManager.Instance.PlayerMenuView.StartSelectPlayerMenu(PlayerItemMenuMode.Sell , shopInventory);
                 break;
             default:
                 Hide();

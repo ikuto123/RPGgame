@@ -31,7 +31,7 @@ public class PlayerEquipmentInventory : MonoBehaviour
                 if (weapons.Count >= maxWeapons) return false;
                 weapons.Add(equipment);
                 break;
-            case "防具":
+            case string type when type.StartsWith("防具"):
                 if (armors.Count >= maxArmors) return false;
                 armors.Add(equipment);
                 break;
@@ -51,7 +51,7 @@ public class PlayerEquipmentInventory : MonoBehaviour
         switch (item.Type)
         {
             case "武器": weapons.Remove(item); break;
-            case "防具": armors.Remove(item); break;
+            case string type when type.StartsWith("防具") : armors.Remove(item); break;
             case "アクセサリー": accessories.Remove(item); break;
         }
     }
